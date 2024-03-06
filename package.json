@@ -5,15 +5,22 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "tsc"
+    "start": "cls && tsx  ./src/index.ts"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "nodets": "^0.0.1"
+    "@types/mathjs": "^9.4.2",
+    "@types/readline-sync": "^1.4.8",
+    "compute-cosine-similarity": "^1.1.0",
+    "dotenv": "^16.4.4",
+    "nodets": "^0.0.1",
+    "openai": "^4.28.0",
+    "readline-sync": "^1.4.10"
   },
   "devDependencies": {
     "@types/node": "^20.11.16",
+    "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   }
 }

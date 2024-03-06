@@ -5,7 +5,7 @@
         "target": "ES2020",
         "module": "NodeNext",
         "moduleResolution": "NodeNext",
-        "outDir": "./dist",
+        "outDir": "./public/js",
         "rootDir": "./src",
         "sourceMap": true,
         "declaration": true,
