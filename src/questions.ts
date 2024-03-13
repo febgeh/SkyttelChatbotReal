@@ -1,3 +1,4 @@
+//<a href="https://www.w3schools.com">Visit W3Schools.com!</a>
 
 
 export const dataset = [
@@ -8,18 +9,18 @@ Med SkyttelPASS-brikken får du:
 •	10% rabatt på reiser med alle ferjesamband i AutoPASS for ferje-ordningen som benytter brikke som betalingsløsning. Ved oppretting av tilleggsavtale hos AutoPASS for ferje forskuddsavtale og registrering av brikke i den, får du mellom 40-50% rabatt.
 •	10% rabatt på reiser med Bastø Fosen mellom Moss-Horten. Ved oppretting av tilleggsavtale hos Bastø Fosen og registrering av brikke i den, får du 30% rabatt.
 •	Rabatt på Øresundsforbindelsen mellom Malmö og København og på Storebæltsforbindelsen på Sjælland i Danmark
-•	Automatisk tilsendt forbruksoversikt om ønskelig. Ta kontakt med vårt kundesenter.
-•	Automatisk tilsendt forbruksoversikt om ønskelig. Ta kontakt med vårt kundesenter.
+•	Automatisk tilsendt forbruksoversikt om ønskelig. Ta kontakt med vårt <a href="https://skyttelpass.no/kundeservice/">kundesenter</a>.
+•	Automatisk tilsendt forbruksoversikt om ønskelig. Ta kontakt med vårt <a href="https://skyttelpass.no/kundeservice/">kundesenter</a>.
 •	Varsling om unormale belastninger.
 •	Timesrabatt og månedstak i de bomstasjoner og bomringer som tilbyr dette.
 •	Automatisk påminnelse ved salg av norsk privateid kjøretøy. Husk at det er avtaleeier sitt ansvar å avslutte kjøretøy i avtalen som skal selges/vrakes.
 •	Alle dine bompasseringer og ferjereiser samlet på én faktura fra SkyttelPASS dersom du ikke har tilleggsavtale hos AutoPASS for ferje forskuddsavtale og/eller Bastø Fosen.
-•	Tilgang til en Min Side med oversikt over dine passeringer, fakturainformasjon, personalia, kjøretøyinformasjon og brikkenummer.
+•	Tilgang til en <a href="https://minside.skyttelpass.no/">Min Side</a> med oversikt over dine passeringer, fakturainformasjon, personalia, kjøretøyinformasjon og brikkenummer.
     
     `,
     `
     Hvordan oppretter jeg en avtale? 
-    Du kan enkelt opprette avtale ved å klikke her.
+    Du kan enkelt opprette avtale ved å klikke <a href="https://minside.skyttelpass.no/">her</a>.
     Hvert kjøretøy på avtalen må ha sin egen brikke koblet mot kjøretøyets registreringsnummer, og brikken må plasseres fysisk i kjøretøyet.
     Avtalen er gyldig fra dagen etter du har mottatt bekreftelse på opprettet avtale. Kjøretøyets registreringsnummer vil da leses ved bompasseringer og ferjereiser og kobles mot din avtale, men så snart du mottar kjøretøyets brikke skal brikken monteres korrekt i kjøretøyet.
     
@@ -32,7 +33,7 @@ Med SkyttelPASS-brikken får du:
     `,
     `
     Hvordan endrer jeg opplysning i min avtale?
-    Kjøretøy- og personopplysninger endrer du enkelt ved å logge inn på Min Side.
+    Kjøretøy- og personopplysninger endrer du enkelt ved å logge inn på <a href="https://minside.skyttelpass.no/">Min Side</a>.
     Du kan ikke endre eier av avtale. Unntak er ved innsendelse av kopi av skifte-/uskifteattest som viser at gjenlevende partner/arvinger overtar boet.
     Husk at endringer du gjør i din SkyttelPASS-avtale ikke oppdaterer dine opplysninger i eventuelle tilleggsavtaler hos AutoPASS for ferje og Bastø Fosen.
     
@@ -53,7 +54,7 @@ Med SkyttelPASS-brikken får du:
     `,
     `
     Hvor finner jeg avtalevilkår?
-    Du kan lese avtalevilkårene her og under «Generell informasjon» på Min Side.
+    Du kan lese avtalevilkårene her og under «Generell informasjon» på <a href="https://minside.skyttelpass.no/">Min Side</a>.
     
     `,
     `
@@ -94,18 +95,18 @@ Med SkyttelPASS-brikken får du:
     `,
     `
     Hvor finner jeg brikkenummeret mitt?
-    Du finner brikkenummeret på langsiden av selve brikken, og i informasjon om kjøretøyet på Min Side. 
+    Du finner brikkenummeret på langsiden av selve brikken, og i informasjon om kjøretøyet på <a href="https://minside.skyttelpass.no/">Min Side</a>. 
     Brikkenummeret starter med 9578 - - -
     
     `,
     `
     Må brikken være i kjøretøyet?
-    Brikken skal monteres så snart som mulig etter at den er mottatt. Ved brikkeleste bompasseringer og ferjereiser vil informasjon om disse bli raskere tilgjengelig for deg på Min Side.
+    Brikken skal monteres så snart som mulig etter at den er mottatt. Ved brikkeleste bompasseringer og ferjereiser vil informasjon om disse bli raskere tilgjengelig for deg på <a href="https://minside.skyttelpass.no/">Min Side</a>.
     
     `,
     `
     Hvordan skal brikken gjenbrukes eller gjenvinnes?
-    Brikken kan gjenbrukes på et nytt kjøretøy, dette kan du endre på Min Side under kjøretøy. 
+    Brikken kan gjenbrukes på et nytt kjøretøy, dette kan du endre på <a href="https://minside.skyttelpass.no/">Min Side</a> under kjøretøy. 
     Brikker du ikke lenger ønsker å benytte sorteres som elektronisk-avfall.
     
     `,
@@ -194,14 +195,14 @@ Med SkyttelPASS-brikken får du:
     `
     Betaling
     SkyttelPASS ønsker å ta hensyn til miljøet, og tilbyr derfor elektronisk faktura og betaling. Hos oss kan du velge mellom faktura i e-post, eFaktura, kredittkort eller AvtaleGiro.
-    E-post: Når du oppretter SkyttelPASS-avtale vil du automatisk motta dine fakturaer i e-post. Dersom du ved betaling av faktura oppretter eFaktura eller AvtaleGiro, faller faktura i e-post bort. Du kan se fakturainformasjon på Min Side.
-    eFaktura: Du oppretter selv eFaktura i din nettbank. eFaktura referanse er ditt kundenummer. Kundenummeret finner du på Min Side eller på en faktura. Med eFaktura blir faktura sendt som PDF til din nettbank, og du betaler ved å trykke på "betal". Det er ikke mulig å ha både eFaktura og AvtaleGiro samtidig. Med eFaktura faller faktura i e-post bort. Du kan se fakturainformasjon på Min Side.
-    AvtaleGiro: Du oppretter selv AvtaleGiro i din nettbank. Dersom du trenger KID-nummer, finner du dette på en mottatt faktura. Med AvtaleGiro mottar du ikke fakturaer i din nettbank, ettersom AvtaleGiro trekker fakturaens beløp direkte fra din konto. Det er ikke mulig å ha både Avtalegiro og eFaktura samtidig. Med AvtaleGiro faller faktura i e-post bort. Du kan se fakturainformasjon på Min Side.
-    Betalingskort: Dersom du ønsker å betale med kreditt- eller debetkort, kan du registrere ditt kort på Min Side. Når passeringer for mer enn 100 kroner er registrert, belastes kortet ditt. Kortet ditt belastet max én gang i uken.
+    E-post: Når du oppretter SkyttelPASS-avtale vil du automatisk motta dine fakturaer i e-post. Dersom du ved betaling av faktura oppretter eFaktura eller AvtaleGiro, faller faktura i e-post bort. Du kan se fakturainformasjon på <a href="https://minside.skyttelpass.no/">Min Side</a>.
+    eFaktura: Du oppretter selv eFaktura i din nettbank. eFaktura referanse er ditt kundenummer. Kundenummeret finner du på <a href="https://minside.skyttelpass.no/">Min Side</a> eller på en faktura. Med eFaktura blir faktura sendt som PDF til din nettbank, og du betaler ved å trykke på "betal". Det er ikke mulig å ha både eFaktura og AvtaleGiro samtidig. Med eFaktura faller faktura i e-post bort. Du kan se fakturainformasjon på <a href="https://minside.skyttelpass.no/">Min Side</a>.
+    AvtaleGiro: Du oppretter selv AvtaleGiro i din nettbank. Dersom du trenger KID-nummer, finner du dette på en mottatt faktura. Med AvtaleGiro mottar du ikke fakturaer i din nettbank, ettersom AvtaleGiro trekker fakturaens beløp direkte fra din konto. Det er ikke mulig å ha både Avtalegiro og eFaktura samtidig. Med AvtaleGiro faller faktura i e-post bort. Du kan se fakturainformasjon på <a href="https://minside.skyttelpass.no/">Min Side</a>.
+    Betalingskort: Dersom du ønsker å betale med kreditt- eller debetkort, kan du registrere ditt kort på <a href="https://minside.skyttelpass.no/">Min Side</a>. Når passeringer for mer enn 100 kroner er registrert, belastes kortet ditt. Kortet ditt belastet max én gang i uken.
     NB! Dersom du benytter et kort som er registrert på en bedrift, vil Nets betalingsløsning legge til et gebyr på 2% av totalbeløpet
     og et engangsgebyr på 0,50 kroner per betaling.
     Vipps: Dersom du har åpnet for å motta Vipps-faktura i Vipps-appen, vil faktura automatisk komme via Vipps hvis du har e-Faktura-avtale med SkyttelPASS.
-    Min Side: Du kan se fakturainformasjon på Min Side.
+    Min Side: Du kan se fakturainformasjon på <a href="https://minside.skyttelpass.no/">Min Side</a>.
 
     `,
     `
@@ -214,11 +215,11 @@ Med SkyttelPASS-brikken får du:
     SkyttelPASS ønsker å ta hensyn til miljøet, og tilbyr elektronisk faktura og betaling.
     E-post: Når du oppretter SkyttelPASS-avtale vil du automatisk motta dine fakturaer i e-post. Dersom du ved betaling av faktura oppretter eFaktura eller AvtaleGiro, faller faktura i e-post bort.
     eFaktura: Du har valgt å motta faktura som eFaktura, og vi minner om ny løsning for eFaktura i nettbank. For å opprette eFaktura-avtale må du ha aktivert den generelle funksjonen «eFaktura – ja takk til alle» i din nettbank. Du vil da motta alle fakturaer fra SkyttelPASS elektronisk, inkludert første faktura. Kontakt din bank dersom du har spørsmål rundt denne funksjonen, eller lurer på om denne er aktivert hos deg. I din nettbank velger du selv om du vil slutte å motta eFaktura fra SkyttelPASS.
-    AvtaleGiro: Du oppretter selv AvtaleGiro i din nettbank. Dersom du trenger KID-nummer, finner du dette på en mottatt faktura. Med AvtaleGiro mottar du ikke fakturaer i din nettbank, fordi AvtaleGiro trekker fakturaens beløp direkte fra din konto. Med AvtaleGiro faller faktura i e-post bort. Du kan da se alle dine fakturaer på Min Side. Det er ikke mulig å ha både AvtaleGiro og eFaktura samtidig. 
-    Betalingskort: Dersom du ønsker å betale med kreditt- eller debetkortet kan du registrere dette på Min Side. Kortet vil da trekkes automatisk én gang i uken dersom det er foretatt bompasseringer eller ferjereiser.
+    AvtaleGiro: Du oppretter selv AvtaleGiro i din nettbank. Dersom du trenger KID-nummer, finner du dette på en mottatt faktura. Med AvtaleGiro mottar du ikke fakturaer i din nettbank, fordi AvtaleGiro trekker fakturaens beløp direkte fra din konto. Med AvtaleGiro faller faktura i e-post bort. Du kan da se alle dine fakturaer på <a href="https://minside.skyttelpass.no/">Min Side</a>. Det er ikke mulig å ha både AvtaleGiro og eFaktura samtidig. 
+    Betalingskort: Dersom du ønsker å betale med kreditt- eller debetkortet kan du registrere dette på <a href="https://minside.skyttelpass.no/">Min Side</a>. Kortet vil da trekkes automatisk én gang i uken dersom det er foretatt bompasseringer eller ferjereiser.
     Til informasjon: Dersom du betaler med bedriftskort vil Nets betalingsløsning legge til et gebyr på 2% av totalsum samt et engangsgebyr på 0,50 kroner per betaling.
     Vipps: Dersom du har åpnet for å motta faktura i Vipps-appen, vil eFaktura automatisk komme via Vipps om du har eFaktura-avtale med SkyttelPASS. 
-    Min Side: Du kan se all din faktura/betalingsinformasjon på Min Side.
+    Min Side: Du kan se all din faktura/betalingsinformasjon på <a href="https://minside.skyttelpass.no/">Min Side</a>.
         
     `,
     `
@@ -294,11 +295,11 @@ Med SkyttelPASS-brikken får du:
     Hvorfor får jeg faktura på et kjøretøy jeg har solgt eller ikke brukt?
     Den vanligste årsaken er at du ikke har husket å avslutte (= fjerne) kjøretøyet på din SkyttelPASS-avtale (og på eventuelle tilleggsavtaler for ferje).
     Det kan også hende at bompasseringer og ferjereiser du er blitt fakturert for ble foretatt før du gjennomførte salg eller vraking av kjøretøyet og avsluttet kjøretøyet på avtalen. På faktura står det oppført hvilken periode faktura gjelder for.
-    På Min Side ser du detaljer om bompasseringer og ferjereiser som er avregnet din SkyttelPASS-avtale.
+    På <a href="https://minside.skyttelpass.no/">Min Side</a> ser du detaljer om bompasseringer og ferjereiser som er avregnet din SkyttelPASS-avtale.
     Husk at:
     •	Det er avtaleeier, ikke kjøretøyets nye eier, som er juridisk ansvarlig for å betale bompasseringer og ferjereiser foretatt av kjøretøy på avtalen.
     •	Det er ikke nok å ta brikken ut av kjøretøyet. Dersom kjøretøyet fortsatt er aktivt i avtalen, vil det ved passeringer i bomstasjoner/bomringer og ved ferjereiser tas bilde av kjøretøyets registreringsnummer, som deretter kobles opp mot og belastes din SkyttelPASS-avtale.
-    •	Det anbefales at du selv fjerner ditt kjøretøy på Min Side, da henvendelser per e-post eller kontaktskjema til vårt kundesenter kan ha noe behandlingstid. Husk også å avslutte kjøretøyet du skal selge eller vrake på eventuell tilleggsavtale hos AutoPASS for ferje og/eller Bastø Fosen.
+    •	Det anbefales at du selv fjerner ditt kjøretøy på <a href="https://minside.skyttelpass.no/">Min Side</a>, da henvendelser per e-post eller kontaktskjema til vårt kundesenter kan ha noe behandlingstid. Husk også å avslutte kjøretøyet du skal selge eller vrake på eventuell tilleggsavtale hos AutoPASS for ferje og/eller Bastø Fosen.
     Det anbefales at selger av kjøretøy har skriftlig avtale med kjøper/ny eier om hvem som skal betale for bompasseringer og ferjereiser inntil kjøretøy er avsluttet på avtalen. 
         
     `,
@@ -310,7 +311,7 @@ Med SkyttelPASS-brikken får du:
     `
     Hva skjer om jeg ikke har betalt faktura?
     Når utestående faktura fra SkyttelPASS ikke betales innen forfallsdato, vil avtalen sperres. Betales ikke kravet etter at det er sendt ut betalingspåminnelse/inkassovarsel, sendes kravet til inkasso.
-    Betalingspåminnelse/inkassovarsel sendes via post, så husk å holde din postadresse oppdatert via Min Side.
+    Betalingspåminnelse/inkassovarsel sendes via post, så husk å holde din postadresse oppdatert via <a href="https://minside.skyttelpass.no/">Min Side</a>.
     NB: SkyttelPASS-avtalen gjenåpnes først igjen etter at man har betalt utestående krav OG melder fra til SkyttelPASS sitt kundesenter om at avtalen skal gjenåpnes.
         
     `,
@@ -322,7 +323,7 @@ Med SkyttelPASS-brikken får du:
     `
     Hvordan legge til kjøretøy på eksisterende avtale?
     På både privatavtale og bedriftsavtale kan man ha et ubegrenset antall kjøretøy.
-    For å legge til et kjøretøy logger du inn på Min Side. I menyen til venstre velger du "Kjøretøy" og "Legg til nytt kjøretøy". Skriv inn registreringsnummeret på kjøretøyet du vil legge til og landet kjøretøyet er registrert i, og trykk deretter «Legg til».
+    For å legge til et kjøretøy logger du inn på <a href="https://minside.skyttelpass.no/">Min Side</a>. I menyen til venstre velger du "Kjøretøy" og "Legg til nytt kjøretøy". Skriv inn registreringsnummeret på kjøretøyet du vil legge til og landet kjøretøyet er registrert i, og trykk deretter «Legg til».
     Til hvert kjøretøy lagt til på avtalen vil du få tilsendt en SkyttelPASS-brikke i posten (med mindre du overfører eller gjenbruker en eksisterende SkyttelPASS-brikke). Hver brikke tilsendt har et engangsgebyr på 200 kroner.
         
     `,
@@ -334,7 +335,7 @@ Med SkyttelPASS-brikken får du:
     `,
     `
     Hvordan fjerner jeg kjøretøy/brikke på avtalen?
-    For å avslutte kjøretøy på din avtale fjerner du enkelt kjøretøyet via Min Side under «Kjøretøy» -- «Endre» -- «Fjerne». Kjøretøyets registreringsnummer og brikke vil da være avsluttet på avtalen, og brikken vil dermed ikke fungere i eventuell tilleggsavtale hos AutoPASS for ferje forskuddsavtale og/eller Bastø Fosen. Du kan også kontakte vårt kundesenter. Husk at ved henvendelser per e-post eller kontaktskjema må noe behandlingstid påberegnes.
+    For å avslutte kjøretøy på din avtale fjerner du enkelt kjøretøyet via <a href="https://minside.skyttelpass.no/">Min Side</a>e under «Kjøretøy» -- «Endre» -- «Fjerne». Kjøretøyets registreringsnummer og brikke vil da være avsluttet på avtalen, og brikken vil dermed ikke fungere i eventuell tilleggsavtale hos AutoPASS for ferje forskuddsavtale og/eller Bastø Fosen. Du kan også kontakte vårt kundesenter. Husk at ved henvendelser per e-post eller kontaktskjema må noe behandlingstid påberegnes.
     TIPS: Ved avslutning av kjøretøy på avtalen blir brikken inaktiv. Dersom du ønsker å legge til et annet kjøretøy på avtalen kan en aktiv brikke overføres til det nye kjøretøyet før det tidligere kjøretøyet fjernes. Husk da også å oppdatere din informasjon om kjøretøy i eventuell tilleggsavtale hos AutoPASS for ferje forskuddsavtale og/eller Bastø Fosen.
     Inaktive brikker kan beholdes til fremtidig bruk og aktiveres på nytt av vårt kundesenter.
     Brikker du ikke lenger ønsker å benytte sorteres som EE-avfall.
@@ -342,7 +343,7 @@ Med SkyttelPASS-brikken får du:
     `,
     `
     Jeg skal selge eller vrake et kjøretøy, hva gjør jeg?
-    Som avtaleeier er du ansvarlig for å avslutte kjøretøyet på din SkyttelPASS-avtale ved salg eller vraking. Det anbefales at du selv fjerner ditt kjøretøy på Min Side for å hindre at avtalen blir belastet for bompasseringer og ferjereiser etter salgsdato. Ved henvendelser per e-post eller kontaktskjema til vårt kundesenter må noe behandlingstid påberegnes. Husk også å avslutte kjøretøyet du skal selge eller vrake på eventuell tilleggsavtale hos AutoPASS for ferje og/eller Bastø Fosen.
+    Som avtaleeier er du ansvarlig for å avslutte kjøretøyet på din SkyttelPASS-avtale ved salg eller vraking. Det anbefales at du selv fjerner ditt kjøretøy på <a href="https://minside.skyttelpass.no/">Min Side</a> for å hindre at avtalen blir belastet for bompasseringer og ferjereiser etter salgsdato. Ved henvendelser per e-post eller kontaktskjema til vårt kundesenter må noe behandlingstid påberegnes. Husk også å avslutte kjøretøyet du skal selge eller vrake på eventuell tilleggsavtale hos AutoPASS for ferje og/eller Bastø Fosen.
     Husk at:
     •	Det er avtaleier, ikke kjøretøyets nye eier, som er juridisk ansvarlig for å betale bompasseringer og ferjereiser foretatt av kjøretøy på avtalen.
     •	Det er ikke nok å ta brikken ut av kjøretøyet. Dersom kjøretøyet fortsatt er aktivt i avtalen, vil det ved passeringer i bomstasjoner/bomringer og ved ferjereiser tas bilde av kjøretøyets registreringsnummer, som deretter kobles opp mot og belastes din SkyttelPASS-avtale.
@@ -350,19 +351,19 @@ Med SkyttelPASS-brikken får du:
     `,
     `
     Brikke / nummerskilt / kjøretøy er mistet eller stjålet, hva gjør jeg? 
-    Logg deg snarest mulig inn på Min Side og fjern kjøretøyet fra avtalen under «Kjøretøy» -- «Endre» -- «Fjerne». Brikken og kjøretøyets registreringsnummer vil da være inaktive. Det er også mulig å kontakte vårt kundesenter, men vær obs på at ved henvendelser per e-post eller kontaktskjema må noe behandlingstid påberegnes.  
+    Logg deg snarest mulig inn på <a href="https://minside.skyttelpass.no/">Min Side</a> og fjern kjøretøyet fra avtalen under «Kjøretøy» -- «Endre» -- «Fjerne». Brikken og kjøretøyets registreringsnummer vil da være inaktive. Det er også mulig å kontakte vårt kundesenter, men vær obs på at ved henvendelser per e-post eller kontaktskjema må noe behandlingstid påberegnes.  
     Ved stjålet brikke og krav om refusjon må forholdet være politianmeldt. Send en henvendelse til vårt kundesenter med kopi av politianmeldelsen.
     NB: Den inaktive brikken vil ikke lenger fungere i eventuell tilleggsavtale hos AutoPASS for ferje forskuddsavtale og/eller Bastø Fosen-avtale.
         
     `,
     `
     Hvordan logger jeg på Min Side?
-    Du logger deg enkelt inn på Min Side på skyttelpass.no ved å taste inn ditt mobilnummer og passordet du laget ved oppretting av SkyttelPASS-avtale. Dersom du har glemt ditt passord kan du trykke på «glemt passord» for å få tilsendt nytt. Ditt kundenummer finner du i e-posten du mottok da du opprettet avtalen, og på tilsendt faktura.
+    Du logger deg enkelt inn på <a href="https://minside.skyttelpass.no/">Min Side</a> på skyttelpass.no ved å taste inn ditt mobilnummer og passordet du laget ved oppretting av SkyttelPASS-avtale. Dersom du har glemt ditt passord kan du trykke på «glemt passord» for å få tilsendt nytt. Ditt kundenummer finner du i e-posten du mottok da du opprettet avtalen, og på tilsendt faktura.
         
     `,
     `
     Hvor finner jeg oversikt over faktura - og betalingsopplysninger?
-    Du finner all din informasjon om fakturaer og betalingsopplysninger på Min Side. Ved å velge «Faktura» i sidemenyen får du opp en oversikt over dine fakturaer. Velg deretter aktuell faktura, og så «Detaljer». Du vil da kunne se din betalingsinformasjon, inkludert beløp, KID og kontonummer.
+    Du finner all din informasjon om fakturaer og betalingsopplysninger på <a href="https://minside.skyttelpass.no/">Min Side</a>. Ved å velge «Faktura» i sidemenyen får du opp en oversikt over dine fakturaer. Velg deretter aktuell faktura, og så «Detaljer». Du vil da kunne se din betalingsinformasjon, inkludert beløp, KID og kontonummer.
         
     `,
     `
@@ -377,24 +378,24 @@ Med SkyttelPASS-brikken får du:
     `,
     `
     Hvordan endrer jeg personalia?
-    Logg in på Min Side og velg «Personalia» i sidemenyen. Her kan du endre adresse, e-postadresse og telefonnummer.
+    Logg in på <a href="https://minside.skyttelpass.no/">Min Side</a> og velg «Personalia» i sidemenyen. Her kan du endre adresse, e-postadresse og telefonnummer.
     Det er ikke mulig å endre navn på avtaleeier. Unntak er ved innsendelse av kopi av skifte-/uskifteattest som viser at gjenlevende partner/arvinger overtar boet.
     Dersom et kjøretøy skal registreres på en avtale som tilhører en annen, må kjøretøyet først avsluttes på eventuell eksisterende avtale.
         
     `,
     `
     Hvordan endrer jeg kjøretøy informasjon?
-    Logg inn på Min Side og velg «Kjøretøy» i sidemenyen. Velg deretter «endre» og så «endre kjøretøy». Legg inn det nye kjøretøyets registreringsnummer og landskode, og trykk «oppdater».
+    Logg inn på <a href="https://minside.skyttelpass.no/">Min Side</a> og velg «Kjøretøy» i sidemenyen. Velg deretter «endre» og så «endre kjøretøy». Legg inn det nye kjøretøyets registreringsnummer og landskode, og trykk «oppdater».
         
     `,
     `
     Hvordan endrer jeg informasjon om betalingskort?
-    Logg inn på Min Side og velg «Generell informasjon» i sidemenyen. Velg deretter «Kredittkortinformasjon» og så «Legg inn nytt kort». Du vil da sendes videre til Netaxept for å registrere ny kortinformasjon. Legg inn ny kortinformasjon, og trykk «registrer». Du vil deretter bli bedt om å godkjenne med din BankID.
+    Logg inn på <a href="https://minside.skyttelpass.no/">Min Side</a> og velg «Generell informasjon» i sidemenyen. Velg deretter «Kredittkortinformasjon» og så «Legg inn nytt kort». Du vil da sendes videre til Netaxept for å registrere ny kortinformasjon. Legg inn ny kortinformasjon, og trykk «registrer». Du vil deretter bli bedt om å godkjenne med din BankID.
         
     `,
     `
     Hvordan avslutter jeg min avtale?
-    Ønsker du å avslutte din SkyttelPASS-avtale sender du oss en skriftlig oppsigelse med ditt navn og kundenummer til post@skyttelpass.no. Du kan også benytte vårt kontaktskjema.
+    Ønsker du å avslutte din SkyttelPASS-avtale sender du oss en skriftlig oppsigelse med ditt navn og kundenummer til post@skyttelpass.no. Du kan også benytte vårt <a href="https://skyttelpass.no/kundeservice/">kontaktskjema</a>.
     NB: Ved avslutning av SkyttelPASS-avtale blir brikke/brikker inaktiv og vil ikke lenger fungere i tilleggsavtale hos AutoPASS for ferje forskuddsavtale og/eller Bastø Fosen.
     Inaktive brikker kan beholdes til fremtidig bruk og aktiveres på nytt av vårt kundesenter.
     Brikker du ikke lenger ønsker å benytte sorteres som EE-avfall.

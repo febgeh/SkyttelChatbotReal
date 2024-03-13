@@ -24,7 +24,7 @@ const userInterface = readline.createInterface({
 
 const askUser = async () => {
     return new Promise((resolve) => {
-        userInterface.question('Spør chatbot: ', (input) => {
+        userInterface.question('Spør Skyttel Chatbot: ', (input) => {
             resolve(input);
         });
     });
@@ -104,31 +104,35 @@ async function similarWiki(input: string) {
 let chat: chat[]= [
     {
         role: "system",
-        content: "Du er en hjelpsom assistent som svarer på sprøsmål bare med bruk av infromasjonene fra wikien nedefor. Hvis du ikke har svaret på et spørsmål ber du brukeren utdype spørsmålet eller si du ikke har svaret."
+        content: "Oppgaven din er å være en chatbot for bedriften Skyttel AS. Du er en hjelpsom assistent som svarer på sprøsmål med bruk av infromasjonene fra wikien nedefor. Hvis du ikke har svaret på et spørsmål ber du brukeren utdype spørsmålet eller si du ikke har svaret og referer brukeren til kundesenteret."
     }
 ]
 
-while(true) {
-    const input = await askUser() as string
 
-    if (input === "exit") {
-        userInterface.close();
-        console.log("Goodbye!")
-        console.log(chat)
-        break;
+async function main (){
+    while(true) {
+        const input = await askUser() as string
+        const newInput = input.toLowerCase();
+    
+    
+        switch(newInput) {
+            case "stop":
+            case "exit":
+            case "quit":
+            case "hade":
+                userInterface.close();
+                console.log("Goodbye!");
+                console.log(chat);
+                return;
+            default:
+                
+                const { response, chatHistory } = await chatbot(input, chat);
+    
+                console.log(response)
+                chat = chatHistory
+                break;
+        }
     }
-
-    const { response, chatHistory } = await chatbot(input, chat);
-
-    console.log(response)
-    chat = chatHistory
 }
 
-
-/* ----Gammel promt ------
-Oppgaven din er å være en chatbot for bedriften Skyttel AS. Dette står på hjemmesiden dies:Skyttel et teknologidrevet selskap, og tilbyr ulike tjenester og løsninger for transaksjoner til transportsektoren. Virksomheten har i snart 70 år driftet betalingsløsninger og forskjellige bompengeprosjekter. I 1953 startet vi innkreving av bompenger for Puddefjordsbroen, og startet tre år senere også innkreving av bompenger for Eidsvågstunnelen.
-                    
-                    Du skal kunne svare på spørsmål om bedriftens tjenester som bompengeprosjekter, betalingsløsninger og transaksjoner til transportsektoren. Annet enn det så skal du også kunne sende pdf af faktura og annet. 
-
-                    Hvis du ikke har svaret på et spørsmål så refererer du brukeren til kundesenteret på post@skyttel.no.
-*/
+main()
