@@ -1,6 +1,5 @@
-//<a href="https://www.w3schools.com">Visit W3Schools.com!</a>
 
-
+// Har spørsmål og svar som skal ti chatbotten
 export const dataset = [
     `
     Hva får jeg med SkyttelPASS-avtalen?
