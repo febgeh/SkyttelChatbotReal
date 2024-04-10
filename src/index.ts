@@ -155,7 +155,27 @@ async function frecuentlyAskedQuestionschatbot() {
     await getFromDatabase();
     allQuestions = allQuestions.map((question) => question.userQuestion);
     let openaiQuestions = JSON.stringify(allQuestions, null, 2);
-    let messageContent = `Sorter disse spørsmålene i variabelen etter de 3 som repeteres mest og returner bare de 3 mest stilte spørsmålene:\n${openaiQuestions} og svar på de ved hjelp av wikien nedenfor: \n${await similarWiki(openaiQuestions)}`;
+    let messageContent = `Sorter disse spørsmålene i variabelen etter de 3 som repeteres mest og returner bare de 3 mest stilte spørsmålene:\n${openaiQuestions} og svar på de ved hjelp av wikien nedenfor: \n${await similarWiki(openaiQuestions)}. Hvis det ikke er et spørsmål som blir mest spurt men for eksempel hei så gå til neste.
+    Svar bare i json format som vist nedenfor:
+    {
+        "questions": {
+            "q1": {
+                "question": "Hva er skyttel?",
+                "answer": "Skyttel er en bedrift som lager chatbots"
+
+            },
+            "q2": {
+                "question": "Hvordan kan jeg kontakte skyttel?",
+                "answer": "Du kan kontakte skyttel på 12345678"
+            },
+            "q3": {
+                "question": "Hvordan kan jeg bruke skyttel sin chatbot?",
+                "answer": "Du kan bruke skyttel sin chatbot ved å skrive til den"
+            },
+            }
+        },
+    }
+    `;
 
     try {
         const res = await openai.chat.completions.create({
@@ -167,8 +187,9 @@ async function frecuentlyAskedQuestionschatbot() {
                 },
             ],
         });
-
-        console.log(res.choices[0].message.content);
+        let responce = res.choices[0].message.content;
+        // console.log(JSON.parse(responce).questions.q1.answer);
+        console.log(responce);
     } catch (error) {
         console.error('Error:', error);
     }
@@ -190,7 +211,6 @@ async function main (){
                 console.log("Goodbye!");
                 console.log(chat);
                 await saveToDatabase(Uquestion);
-                await getFromDatabase();
                 return;
             default:
 
@@ -204,6 +224,6 @@ async function main (){
     }
 }
 
-// main()  
-// getFromDatabase();
-frecuentlyAskedQuestionschatbot()
+console.log("Mest spurte spørsmål:")
+await frecuentlyAskedQuestionschatbot()
+main()  
