@@ -2,9 +2,17 @@ import OpenAI from "openai";
 import 'dotenv/config';
 import readline from 'readline';
 import similarity from "compute-cosine-similarity";
+import { PrismaClient } from '@prisma/client';
 
 //Importerer Q&A datasettet fra questions.ts
 import { dataset } from "./questions.js"; 
+
+const prisma = new PrismaClient();
+
+let Uquestion:any = [];
+
+let allQuestions:any = []
+
 
 
 // Bruker typescript så lager interface for chatbotten
@@ -33,6 +41,7 @@ const askUser = async () => {
     });
 };
 
+
 //lager en funksjon som lar chatbotten skrive til brukeren. 
 async function chatbot (input: string, chatHistory: chat[]): Promise<{response: string, chatHistory: chat[]}> {
     userInterface.prompt();
@@ -53,6 +62,9 @@ async function chatbot (input: string, chatHistory: chat[]): Promise<{response: 
         ]
     })
     //returnerer chatbotten sin respons og chatHistory
+
+    Uquestion.push(input);
+
     return {
         response: res.choices[0].message.content,
         chatHistory: [
@@ -113,6 +125,55 @@ let chat: chat[]= [
     }
 ]
 
+async function saveToDatabase(Uquestion:any){
+    try{
+    await prisma.comments.create({
+        data: {
+            userQuestion: Uquestion[0],
+        }
+      });
+  
+    } catch (error) {
+      console.error('Error:', error);
+    } finally {
+      await prisma.$disconnect();
+    }
+}
+
+async function getFromDatabase(){
+    try{
+        allQuestions = await prisma.comments.findMany();
+    } catch (error) {
+        console.error('Error:', error);
+    } finally {
+        await prisma.$disconnect();
+    }
+
+}
+
+async function frecuentlyAskedQuestionschatbot() {
+    await getFromDatabase();
+    allQuestions = allQuestions.map((question) => question.userQuestion);
+    let openaiQuestions = JSON.stringify(allQuestions, null, 2);
+    let messageContent = `Sorter disse spørsmålene i variabelen etter de 3 som repeteres mest og returner bare de 3 mest stilte spørsmålene:\n${openaiQuestions} og svar på de ved hjelp av wikien nedenfor: \n${await similarWiki(openaiQuestions)}`;
+
+    try {
+        const res = await openai.chat.completions.create({
+            model: "gpt-3.5-turbo",
+            messages: [
+                {
+                    role: "system",
+                    content: messageContent,
+                },
+            ],
+        });
+
+        console.log(res.choices[0].message.content);
+    } catch (error) {
+        console.error('Error:', error);
+    }
+}
+
 //lager en main funksjon som lar brukeren skrive til chatbotten og chatbotten skrive til brukeren
 async function main (){
     while(true) {
@@ -128,9 +189,11 @@ async function main (){
                 userInterface.close();
                 console.log("Goodbye!");
                 console.log(chat);
+                await saveToDatabase(Uquestion);
+                await getFromDatabase();
                 return;
             default:
-                
+
                 //hvis brukeren ikke vil avslutte programmet lar vi chatbotten svare
                 const { response, chatHistory } = await chatbot(input, chat);
                 //printer chatbotten sin respons
@@ -141,4 +204,6 @@ async function main (){
     }
 }
 
-main()
+// main()  
+// getFromDatabase();
+frecuentlyAskedQuestionschatbot()
