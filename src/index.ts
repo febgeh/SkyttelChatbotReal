@@ -224,6 +224,5 @@ async function main (){
     }
 }
 
-console.log("Mest spurte spørsmål:")
 await frecuentlyAskedQuestionschatbot()
-main()  
+// main()  
