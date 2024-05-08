@@ -115,7 +115,7 @@ Med SkyttelPASS-brikken får du:
     
     `,
     `
-    Bompasseringer
+    Hva er prisene?
     Prisene på de ulike bomstasjonene/bomringene finner du på bompengeselskapets nettside:
     •	Priser Fjellinjen (Oslo)
     •	Priser Ferde (Sør- og Vestlandet)

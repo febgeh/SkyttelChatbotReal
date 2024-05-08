@@ -102,7 +102,6 @@ async function similarWiki(input: string) {
         const questionEmbedding = QandA_Embed.data[0].embedding;
         return {embed: questionEmbedding, wiki }
     }))
-
     //returner scoren
     const similarityScores = wiki_Embeds.map((wiki) => {
         return {
@@ -111,9 +110,10 @@ async function similarWiki(input: string) {
         }
     })
 
+
     //sorterer listen med lignendehts score og returnerer paragrafen med høyest score
     similarityScores.sort((a, b) => b.similarity - a.similarity);
-
+    // console.log(similarityScores[0].wiki)
     return similarityScores[0].wiki
 }
 
@@ -143,6 +143,22 @@ async function saveToDatabase(Uquestion:any){
 async function getFromDatabase(){
     try{
         allQuestions = await prisma.comments.findMany();
+        let allQuestionsArray = JSON.stringify(allQuestions.map((question) => question.userQuestion));
+        const res = await openai.chat.completions.create({
+            model: "gpt-3.5-turbo", 
+            messages: [
+                {
+                    role: "system",
+                    content: "sorter disse spørsmålene etter de mest spurte og returner de 3 mest stilte spørsmålene som er array."
+                },
+                {
+                    role: "user",
+                    content: allQuestionsArray,
+                },
+            ]
+            
+        })
+        return res.choices[0].message.content;
     } catch (error) {
         console.error('Error:', error);
     } finally {
@@ -152,10 +168,10 @@ async function getFromDatabase(){
 }
 
 async function frecuentlyAskedQuestionschatbot() {
-    await getFromDatabase();
-    allQuestions = allQuestions.map((question) => question.userQuestion);
-    let openaiQuestions = JSON.stringify(allQuestions, null, 2);
-    let messageContent = `Sorter disse spørsmålene i variabelen etter de 3 som repeteres mest og returner bare de 3 mest stilte spørsmålene:\n${openaiQuestions} og svar på de ved hjelp av wikien nedenfor: \n${await similarWiki(openaiQuestions)}. Hvis det ikke er et spørsmål som blir mest spurt men for eksempel hei så gå til neste.
+    const spørsmål = await getFromDatabase();
+    console.log(spørsmål);
+    let openaiQuestions = JSON.parse(spørsmål);
+    let messageContent = `Svar på spørsmålene ${openaiQuestions} ved hjelp av følgende wiki-tekst: \n${await similarWiki(openaiQuestions)}. Hvis det ikke er et konkret spørsmål som blir spurt så ikke da det med. Hvis svaret ikke er fra wikien svar selv eller referer til kundesenteret.
     Svar bare i json format som vist nedenfor:
     {
         "questions": {
@@ -175,6 +191,7 @@ async function frecuentlyAskedQuestionschatbot() {
             }
         },
     }
+
     `;
 
     try {
@@ -225,4 +242,5 @@ async function main (){
 }
 
 await frecuentlyAskedQuestionschatbot()
-// main()  
+// main()
+// similarWiki("hvordan avslutte avtalen?")
